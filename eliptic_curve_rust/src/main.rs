@@ -1,3 +1,8 @@
+mod lib_elliptic;
+
+use lib_elliptic::elliptic;
+
 fn main() {
-    println!("Hello, world!");
+    let g = elliptic::base_point_g_get();
+    elliptic::print_ec_point(&g);
 }
